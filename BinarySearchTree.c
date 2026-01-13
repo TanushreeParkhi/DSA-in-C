@@ -61,8 +61,7 @@ node *delete(node *root, int val)
         else{
             node *temp=MIN(root->right);
             root->data=temp->data;
-            free(temp);
-            return root;
+            root->right=delete(root->right, temp->data);
         }
     }
     return root;
