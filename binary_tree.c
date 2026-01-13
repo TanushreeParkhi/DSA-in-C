@@ -21,6 +21,7 @@ int height(node *root)
 node *newnode(int val)
 {
     node *new=malloc(sizeof(node));
+    if (!new) exit(1);
     new->data=val;
     new->left=new->right=NULL;
     return new;
