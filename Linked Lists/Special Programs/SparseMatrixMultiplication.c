@@ -55,7 +55,7 @@ void display(node *head, int rows, int cols)
 int main()
 {
 	node *mat=NULL;
-	printf("ENter no. of rows, cols, non-zero entries:");
+	printf("Enter no. of rows, cols, non-zero entries:");
 	int rows, cols, n;
 	scanf("%d%d%d", &rows, &cols, &n);
 	int i;
