@@ -35,6 +35,12 @@ node *delete_front(node *head)
 {
 	if (!head){ printf("Empty LL\n");
 	return NULL;}
+	if (head->next==head)
+	{
+		printf("Deleted: %d\n", head->val);
+		free(head);
+		return NULL;
+	}
 	head->prev->next=head->next;
 	head->next->prev=head->prev;
 	printf("Deleted: %d\n", head->val);
@@ -61,6 +67,12 @@ node *delete_rear(node *head)
 {
 	if (!head){ printf("Empty LL\n");
 	return NULL;}
+	if (head->next==head)
+	{
+		printf("Deleted: %d\n", head->val);
+		free(head);
+		return NULL;
+	}
 	node *t=head->prev;
 	
 	head->prev=t->prev;
@@ -92,7 +104,7 @@ int main()
 	int ch,n;
 	while (1)
 	{
-		printf("1. Ins f, 2. ins rear, 3. delete fr, 4. delete rear, 5. dispaly Enter ch:");
+		printf("1. Insert front, 2. Insert rear, 3.Delete front, 4.Delete rear, 5.Display\nEnter choice:");
 		scanf("%d", &ch);
 		switch(ch)
 		{
