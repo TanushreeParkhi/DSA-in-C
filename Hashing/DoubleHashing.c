@@ -70,7 +70,7 @@ void display()
     {
         if (table[i]==-1)
         {
-            printf("EMpty at index %d\n", i);
+            printf("Empty at index %d\n", i);
         }
         else printf("%d at index %d\n", table[i], i);
     }
