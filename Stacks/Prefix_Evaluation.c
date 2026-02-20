@@ -31,9 +31,9 @@ int compute(int op1, int op2, char c)
 { switch(c)
 { case '$':return pow(op2, op1);
 case '*':return op2*op1;
-case '/':return op2/op1;
+case '/':return op1/op2;
 case '+':return op2+op1;
-case '-': return op2-op1;
+case '-': return op1-op2;
 default: return 0;
 }
 }
