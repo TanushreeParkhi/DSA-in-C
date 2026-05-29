@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -274,4 +274,4 @@ int main()
     }
     return 0;
 }
->>>>>>> 57067eb7b974293e70a3ca2eabc67276c2f8bc9c
+
